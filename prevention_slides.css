@@ -4,13 +4,7 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.slideshow-container2 {
-  max-width: 1700px;
+  max-width: 1400px;
   position: relative;
   margin: auto;
 }
@@ -20,14 +14,18 @@
   display: none;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 /* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
-  position: relative;
-  top: 20%;
+  position: absolute;
+  top: 40%;
   width: auto;
-  margin-top: 22px;
+  margin-top: -10px;
   padding: 16px;
   color: black;
   font-weight: bold;
@@ -42,27 +40,33 @@
   right: 10px;
   border-radius: 3px 0 0 3px;
 }
-/* Position the "next button" to the right */
-.next2 {
-  right: 0px;
-  border-radius: 13px 0 0 13px;
+/* Position the "prev button" to theleft */
+.prev {
+  left: 10px;
+  border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(165, 197, 154, 0.7);
 }
-
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 2px;
+  color: white;
+}
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+  font-size: 2em;
+  line-height: 0.1em;
+  padding: 0px;
+  bottom: 2px;
   width: 100%;
   text-align: center;
+  background-color: rgba(40, 40, 40, 0.2);
 }
 
 /* Number text (1/3 etc) */
@@ -73,7 +77,10 @@
   position: absolute;
   top: 0;
 }
-
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.4;
+}
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -84,6 +91,17 @@
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 25%;
 }
 
 .active,
@@ -99,6 +117,15 @@
   animation-duration: 1.5s;
 }
 
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;

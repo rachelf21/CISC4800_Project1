@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Say No to Germs</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet" type="text/css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="prevention_slides.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
     <div class="topnav">
-        <a href="./index.html"> Home</a>
-        <a href="./flu.html"> Influenza</a>
-        <a href="./cold.html"> Common Cold</a>
-        <a href="./Coronavirus.html"> Coronavirus</a>       
-        <a class="active" href="./prevention.html"> Prevention</a>
-        <a href = "./posters.html" > Free Posters </a> 
-        <a href="./about.html"> About </a>
-        <a href="./contact.html"> Contact Us </a>
-
+      <a href="./index.html"> Home</a>
+      <a href="./flu.html"> Influenza</a>
+      <a href="./cold.html"> Common Cold</a>
+      <a href="./Coronavirus.html"> Coronavirus</a>
+      <a class="active" href="./prevention.html"> Prevention</a>
+      <a href="./posters.html"> Free Posters </a>
+      <a href="./contact.html"> Contact Us </a>
     </div>
+    <div class="information middle slideshow-container">
+      <span class="heading"> Prevention </span>
+      <div class="caption-container"><p id="caption" class="text"></p></div>
 
-    <div class= "information middle">
-        <span class="heading"> Prevention </span>
+      <div class="mySlides fade">
+        <a href="#"><img src="images/wash hands.jpg" width="100%" alt="wash hands"/></a>
+      </div>
+      <div class="mySlides fade">
+        <a href="#"><img src="images/face-rubbing.jpg" width="100%" alt="rub face"/></a>
+      </div>
+      <div class="mySlides fade">
+        <a href="#"><img src="images/sneeze elbow.jpg" width="100%" alt="eblow sneeze"/></a>
+      </div>
+      <div class="mySlides fade">
+        <a href="#"><img src="images/stay home sick.jpg" width="100%" alt="stay home"/></a>
+      </div>
 
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-        <div class="row">
-            <div class="col box"><a href="#"><img class="img_row" src="images/wash hands.jpg" width=100% alt="image of flu virus"></a>>
-                <div class="overlay"> <span class="caption">Wash hands </span></div>
-            </div>
-            <div class="col box"><a href="#"><img class="img_row" src="images/face-rubbing.jpg" width=100% alt="image of flu virus"></a>
-                <div class="overlay"> <span class="caption">Don't touch face </span></div>
-            </div>
-            <div class="col box"><a href="#"><img  class="img_row" src="images/sneeze elbow.jpg" width=100% alt="image of coronavirus"></a>
-                <div class="overlay"> <span class="caption">Elbow sneeze </span></div>
-            </div>
+      <div class="row">
+        <div class="col">
+          <img class="demo cursor" src="./images/wash hands.jpg" width="200px" onclick="currentSlide(1)" alt="wash hands" />
         </div>
-        <div class="col box"><a href="#"><img  class="img_row" src="images/stay home sick.jpg" width=100% alt="image of coronavirus"></a>
-            <div class="overlay"> <span class="caption">Stay home </span></div>
+        <div class="col">
+          <img class="demo cursor" src="images/face-rubbing.jpg" width="200px" onclick="currentSlide(2)" alt="rub face" />
         </div>
+        <div class="col">
+          <img class="demo cursor" src="images/sneeze elbow.jpg" width="200px" onclick="currentSlide(3)" alt="elbow sneeze" />
         </div>
-
-
-
-        <ul>
-            <li>wash hands</li>
-            <li>don't touch face</li>
-            <li>elbow sneeze</li>
-            <li>stay home if you're sick</li>
-            <li><a href="flu_shot.html"> best prevention against the flu</a></li>
-        </ul>
-
-
+        <div class="col">
+          <img class="demo cursor" src="images/stay home sick.jpg" width="200px" onclick="currentSlide(4)" alt="stay home" />
+        </div>
+      </div>
+      <a href="flu_shot.html"> best prevention against the flu</a>
     </div>
-
-</body>
-
+    <script src="./slides_gallery.js"></script>
+  </body>
 </html>

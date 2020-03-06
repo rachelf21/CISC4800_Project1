@@ -17,13 +17,16 @@
       <a href="./Coronavirus.html"> Coronavirus</a>
       <a href="./prevention.html"> Prevention</a>
       <a class="active" href="./posters.html"> Free Posters </a>
-      <a href="./about.html"> About </a>
       <a href="./contact.html"> Contact Us </a>
     </div>
 
     <div class="middle">
       <span class="heading"> Free Posters</span>
-
+      <p>
+        Click on any of the posters below for a high resolution version that you may print. <br />Alternatively, fill out the form below and
+        we will mail a poster of your choice to the address provided. <br />
+        Thank you for doing your part in keeping germs away!
+      </p>
       <div class="container">
         <div class="row">
           <div class="column">
@@ -108,28 +111,20 @@
               <input type="text" id="fname" name="firstname" placeholder="Your name.." />
               <label for="lname">Last Name</label>
               <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
-              <label for="disease">Disease</label>
-              <select id="disease" name="Disease">
+              <label for="poster">Poster</label>
+              <select id="poster" name="Poster">
                 <option value="none">--Select from list--</option>
-                <option value="flu">Influenza</option>
-                <option value="cold">Common Cold</option>
-                <option value="coronavirus">Coronavirus</option>
-                <option value="other">Other</option>
+                <option value="poster1">Poster 1</option>
+                <option value="poster2">Poster 2</option>
+                <option value="poster3">Poster 3</option>
+                <option value="poster4">Poster 4</option>
+                <option value="poster5">Poster 5</option>
+                <option value="poster6">Poster 6</option>
               </select>
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="none">--Select from list--</option>
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="china">China</option>
-                <option value="hongkong">Hong Kong</option>
-                <option value="japan">Japan</option>
-                <option value="unitedkingdom">United Kingdom</option>
-                <option value="usa">USA</option>
-                <option value="other">Other</option>
-              </select>
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="How can we help you?" style="height:170px"></textarea>
+              <label for="address">Mailing Address</label>
+              <textarea id="address" name="address" placeholder="Enter your complete mailing address" style="height:110px"></textarea>
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="Tell us a little about yourself" style="height:170px"></textarea>
               <input type="submit" value="Submit" />
             </form>
           </div>

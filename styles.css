@@ -1,3 +1,21 @@
+body {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #edf7e8;
+    font-family: "Oxygen", "Tahoma", sans-serif
+}
+
+h1 {
+    font-family: "Bungee";
+    text-align: center;
+}
+
+p {
+    font-family: "Oxygen", "Tahoma"
+}
+
 .topnav{
     background-color: #323E2c;
     overflow:hidden;
@@ -27,15 +45,6 @@
     color:#323E2c;
 }
 
-h1 {
-    font-family: "Bungee";
-    text-align: center;
-}
-
-p {
-    font-family: "Oxygen", "Tahoma"
-}
-
 .heading {
     color: rgb(26, 32, 24);
     font-family: "Bungee";
@@ -43,14 +52,7 @@ p {
     font-size: 3vw;
 }
 
-body {
-    margin-top: 10px;
-    margin-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    background-color: #edf7e8;
-    font-family: "Oxygen", "Tahoma"
-}
+
 
 .footer {
     position: relative;
